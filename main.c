@@ -142,7 +142,7 @@ int main(void) {
                         for (int j = 0; j < stunum; j++) {
                             if (max < score[j][i]) {
                                 max = score[j][i];
-                                name = i;
+                                name = j;
                             }
                         }
                         printf("%s의 최고점은 %s학생의 %d점 입니다.\n", subject[i], stuname[name], max);
@@ -163,7 +163,7 @@ int main(void) {
                         for (int j = 0; j < stunum; j++) {
                             if (min > score[j][i]) {
                                 min = score[j][i];
-                                name = i;
+                                name = j;
                             }
                         }
                         printf("%s의 최저점은 %s학생의 %d점 입니다.\n", subject[i], stuname[name], min);
